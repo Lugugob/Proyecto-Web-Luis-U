@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restablecer Contraseña</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-header">
+            <button class="nav-button" onclick="window.location.href='index.html'">
+                <img src="Iconos/Home.png" alt="Pagina de inicio">
+            </button>
+            <button class="nav-button" onclick="window.location.href='contacto.html'">
+                <img src="Iconos/Message square.png" alt="Contactame">
+            </button>
+            <button class="nav-button" onclick="window.location.href='micuenta.html'">
+                <img src="Iconos/User.png" alt="Mi Cuenta">
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-recuperar">
+        <h1>Restablece tu contraseña</h1>
+        <p>Te enviaremos un correo con más instrucciones sobre cómo restablecer tu contraseña.</p>
+        <section class="micuenta-formularios">
+            <form class="micuenta-formulario">
+                <div class="campo">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+            </form>
+        </section>
+        <div class="correorecuperar">
+           <button id="btnSolicitud">Enviar Correo</button>
+                <dialog id="modalConfirmacion">
+                <h2>¡Correo enviado exitosamente!</h2>
+                <p>Se ha enviado un enlace para restablecer tu contraseña a tu correo electrónico.
+                Asegúrate de revisar tu carpeta de spam si no aparece en la bandeja principal. Si recientemente cambiaste tu correo electrónico registrado, entonces deberías revisar en tu correo antiguo.</p>
+                <button id="btnCerrar">Cerrar</button>
+                </dialog>
+        </div>
+    <script src="Funcionalidad/app.js"></script>
+    </main>
+
+    <footer>
+        <h2>Contáctame</h2> 
+        <nav class="nav-footer">
+            <a href="https://www.instagram.com/_lggb_/" target="_blank" aria-label="Instagram">
+            <img src="Iconos/Instagram.png" alt="Instagram" width="30" height="30"> 
+            </a>
+            <a href="https://www.facebook.com/luisgustavo.gomezbarrios" target="_blank" aria-label="Facebook">
+            <img src="Iconos/Facebook.png" alt="Facebook" width="30" height="30"> 
+            </a>
+            <a href="mailto: lgomezb7@miumg.edu.gt" target="_blank" aria-label="Correo electronico">
+            <img src="Iconos/Mail.png" alt="Correo electronico" width="30" height="30"> 
+            </a>
+            <a href="https://gt.linkedin.com/in/luis-gomez-1536232b3" target="_blank" aria-label="Linkedin">
+            <img src="Iconos/Linkedin.png" alt="Linkedin" width="30" height="30"> 
+            </a>
+        </nav>
+        <div class="info-personal">
+            <p>Luis Gustavo Gómez Barrios</p>
+            <p>Carnet: 5390-25-16444</p>
+            <p>Introduccion a los sistemas de cómputo</p>
+            <p>Seccion "C"</p>
+        </div>
+        <div class="marca">
+            <p>Esta página es una marca registrada de ©Luis Gómez,  2025.</p>
+        </div>
+    </footer>
+</body>
+</html>

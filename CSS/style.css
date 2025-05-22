@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+
+/*reset general*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*AQUI VA LO DEL LANDING PAGE
+**************************************************/
+
+/* Aqui empiezam lo del header*/
+header {
+    background-color: #2F3F62;
+    padding: 20px 70px;
+}
+
+.nav-header {
+    display: flex;
+    gap: 59px;
+    justify-content: flex-end;
+}
+
+.nav-button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nav-button img{
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+/* Aqui empieza el MAIN*/
+/* aqui va lo del info principal*/
+.main-index {
+    background-color: #C3D3C3;
+    color: #2F3F62;
+    height: auto; /*altura del cuadro verde del contenido principal arriba*/
+    box-sizing: border-box;
+}
+
+.info-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Pa que adapte en telefonos */
+    font-family: "Inter", sans-serif;
+  }
+
+  .info-1 {
+    flex: 1.5;
+    min-width: 300px;
+  }
+
+  .info-1 h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+
+  .info-1 p {
+    text-align: justify;
+    font-size: 24px;
+    line-height: 1.6;
+  }
+
+  .img-perfil {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .img-perfil img {
+    width: 100%;
+    max-width: 400px;
+    height: 500px; /*altura de la imagen*/
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /*aqui va lo del carousel*/
+.carousel{
+    padding: 2rem;
+}
+
+.slide-container{
+    position: relative;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.slides{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    /*overflow-x: auto;no usar este, pone una slide bar feo*/
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+}
+
+.slides img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.carousel-pagination{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 0.5rem 1.5rem;
+}
+/*aqui va lo del pagination*/
+
+.carousel-pagination a{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #2F3F62;
+    opacity: 0.75;
+}
+
+.carousel-pagination a:hover {
+    opacity: 2;
+}
+/*previous y next buttons*/
+
+.anterior {
+    position: absolute;
+    top: 50%;
+    left: -4rem;
+    transform: translateY(-50%);
+    background-color: rgba(47, 63, 98, 1); /* fondo oscuro semitransparente */
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.85;
+}
+
+.anterior:hover {
+    opacity: 1;
+}
+
+.siguiente {
+    position: absolute;
+    top: 50%;
+    right: -4rem;
+    transform: translateY(-50%);
+    background-color: rgba(47, 63, 98, 1); /* fondo oscuro semitransparente */
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.85;
+}
+
+.siguiente:hover {
+    opacity: 1;
+}
+
+/* aqui comienza el info secundaria*/
+
+.info-secundaria {
+    padding: 2rem;
+    color: #2F3F62
+}
+
+.info-secundaria h2 {
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 8rem;
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.info-secundaria-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1240px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    padding-bottom: 4rem;
+}
+
+/* la division de las columnas la deje asi*/
+.info-secundaria-contenido > div {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+.info-secundaria img {
+    width: 368px;
+    max-width: 405px;
+    height: auto;
+    border-radius: 0.5rem;
+    aspect-ratio: 4 / 5;
+}
+
+.info-secundaria h3 {
+    margin-top: 1rem;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+}
+
+.info-secundaria p {
+    font-size: 24px;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+
+/* aqui va el footer*/
+footer {
+    background-color: #2F3F62;
+    color: white;
+    padding: 30px;
+    padding-top: 2rem;
+}
+
+footer h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-footer{
+    display: flex;
+    gap: 59px;
+    justify-content: center;
+}
+
+.nav-footer img{
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+.info-personal{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+}
+
+.marca{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+/*AQUI VA LO DEL MICUENTA PAGE
+*************************************************************************************************************/
+
+.main-micuenta{
+    background-color: #C3D3C3;
+    color: #2F3F62;
+    height: auto; /*altura del cuadro verde del contenido principal arriba*/
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 2rem;
+}
+.micuenta-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.micuenta-info h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.micuenta-info img {
+  width: 190px;
+  height: 190px;
+}
+
+.micuenta-info p {
+    text-align: justify;
+    font-size: 24px;
+    line-height: 1.6;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+/*aqui empieza lo de los inputs*/
+.micuenta-formularios {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.micuenta-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  width: 600px; /* Tamaño fijo para centrar bien*/
+  text-align: left;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.campo input {
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*aqui van las acciones de los botones*/
+
+.acciones-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 2rem auto 1rem auto;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #2F3F62;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.acciones-login a {
+  color: #2F3F62;
+  text-decoration: underline;
+}
+
+.btn-ingresar {
+  background-color: #2F3F62;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  
+  /*  pa que centre*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2rem auto;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #1f2a45;
+}
+
+/*AQUI VA LO DEL CREAR CUENTA PAGE
+*************************************************************************************************************/
+
+.main-crear {
+    background-color: #C3D3C3;
+    color: #2F3F62;
+    height: auto;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 2rem;
+}
+
+.main-crear h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 20px;
+    padding-top: 3rem;
+}
+
+.crear-centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  height: auto; 
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.btn-registrarme {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: #2F3F62;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-registrarme:hover {
+  background-color: #1e2c4a;
+}
+
+.crear-centrado p {
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.linea-o {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; /* Espacio entre el texto y las líneas */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  color: #2F3F62;
+  font-weight: bold;
+}
+
+.linea-o::before,
+.linea-o::after {
+   content: "";
+  width: 270px;
+  height: 3px;
+  background-color: #2F3F62;
+}
+
+.crear-registros a {
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.crear-registros {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.crear-fb {
+  background-color: #3b5998;
+}
+
+.crear-x {
+  background-color: #000000;
+}
+
+.crear-lin {
+  background-color: #0e76a8;
+}
+
+/*AQUI VA LO DE RESTABLECER  PAGE
+*************************************************************************************************************/
+
+.main-recuperar {
+    background-color: #C3D3C3;
+    color: #2F3F62;
+    height: auto;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 2rem;
+}
+
+.main-recuperar h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 20px;
+    padding-top: 3rem;
+}
+
+.main-recuperar p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 24px; 
+}
+
+.main-recuperar button {
+  background-color: #2F3F62;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  
+  /*  pa que centre*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2rem auto;
+  width: 400px;
+}
+
+button:hover {
+  background-color: #1f2a45;
+}
+
+.correorecuperar {
+    padding-top: 2rem;
+}
+/*AQUI EMPIEZA EL DEL CONTACTO********************************************************
+********************************************************************************************/*
+
+.main-contacto {
+    background-color: #C3D3C3;
+    color: #2F3F62;
+    height: auto;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 2rem;
+}
+
+.main-contacto h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 20px;
+    padding-top: 3rem;
+}
+
+.main-contacto h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+    padding-top: 3rem;
+}
+/*aqui va lo de los radio buttons*/
+.opciones-radio {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  font-size: 24px;
+  font-weight: 500;
+
+}
+
+.opciones-radio label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.opciones-radio input[type="radio"] {
+  accent-color: #2e3b5e;
+  transform: scale(1.5);
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  transform: scale(1);
+  accent-color: #2e3b5e;
+  cursor: pointer;
+}
+
+.enviarsolicitud button{
+  background-color: #2F3F62;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 24px;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  
+  /*  pa que centre*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2rem auto;
+  width: 400px;
+}
+
+button:hover {
+  background-color: #1f2a45;
+}
+ 
+/*DISEÑO DE LOS MODALS************************************************************/
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 600px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+dialog h2 {
+    font-size: 32px;
+
+}
+
+dialog p {
+    font-size: 24px;
+
+}

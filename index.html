@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Personal</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-header">
+            <button class="nav-button" onclick="window.location.href='index.html'">
+                <img src="Iconos/Home.png" alt="Pagina de inicio">
+            </button>
+            <button class="nav-button" onclick="window.location.href='contacto.html'">
+                <img src="Iconos/Message square.png" alt="Contactame">
+            </button>
+            <button class="nav-button" onclick="window.location.href='micuenta.html'">
+                <img src="Iconos/User.png" alt="Mi Cuenta">
+            </button>
+        </nav>
+    </header>
+
+    <Main class="main-index">
+        <section class="info-principal">
+            <div class="info-1">
+                <h1>¡HOLA, SOY LUIS!</h1>
+                <p>Bienvenido a mi rincón de aprendizaje. Soy un entusiasta tecnológico guatemalteco. Me apasiona la tecnología, especialmente entender cómo funcionan las cosas detrás de escena y el impacto que tienen en nuestro día a día. En mi tiempo libre disfruto viajar, conocer nuevos lugares y seguir aprendiendo, siempre buscando conectar mis intereses con mi desarrollo.</p>
+            </div>
+            <div class="img-perfil">
+                <img src="Imagenes/Perfil.jpg" alt="Individuo posando con 2 volcanes de fondo">
+            </div>
+        </section>
+
+        <section class="carousel">
+            <div class="slide-container">
+                <button class="anterior" aria-label="Anterior">&#10094;</button>
+                <div class="slides">
+                    <img id="slide1" src="Imagenes/Slide1.webp" alt="Persona tomandose foto con celular en mano en un castillo">
+                    <img id="slide2" src="Imagenes/Slide2.webp" alt="Playa con oceano azul claro y lanchas al fondo">
+                    <img id="slide3" src="Imagenes/Slide3.webp" alt="Persona viendo el atardecer en la playa">
+                    <img id="slide4" src="Imagenes/Slide4.webp" alt="Selva frondosa con ruinas mayas al fondo">
+                    <img id="slide5" src="Imagenes/Slide5.webp" alt="Cañon boscoso con un rio al fondo">
+                </div>
+                <button class="siguiente" aria-label="Siguiente">&#10095;</button>
+                <div class="carousel-pagination">
+                    <a href="#slide1"></a>
+                    <a href="#slide2"></a>
+                    <a href="#slide3"></a>
+                    <a href="#slide4"></a>
+                    <a href="#slide5"></a>
+                </div>
+            </div>
+        </section>        
+        
+        <section class="info-secundaria">
+            <h2>¿Qué me gusta?</h2>
+            <div class="info-secundaria-contenido">
+                <div class="f1">
+                    <img src="Imagenes/F1.jpg" alt="Automovil de fórmula 1">
+                    <h3>Fórmula 1</h3>
+                    <p>Soy fan de la Fórmula 1, veo</p>
+                    <p>todas las carrera y he tenido la</p>
+                    <p>oportunidad de verlas en vivo.</p>
+                </div>
+                <div class="gatos">
+                    <img src="Imagenes/Gatitos.jpg" alt="Gatos en un sofá">
+                    <h3>Mascotas</h3>
+                    <p>Me gustan los animales,</p>
+                    <p>actualmente tengo 2 perros</p>
+                    <p>y 2 gatos.</p>
+                </div>
+                <div class="concierto">
+                    <img src="Imagenes/Concierto.jpg" alt="Orquesta en un escenario">
+                    <h3>Conciertos</h3>
+                    <p>Asistir a conciertos es lo mío;</p>
+                    <p>me gusta experimentar la </p>
+                    <p>música en vivo.</p>
+                </div>
+            </div>
+        </section>
+    </Main>
+
+    <footer>
+        <h2>Contáctame</h2> 
+        <nav class="nav-footer">
+            <a href="https://www.instagram.com/_lggb_/" target="_blank" aria-label="Instagram">
+            <img src="Iconos/Instagram.png" alt="Instagram" width="30" height="30"> 
+            </a>
+            <a href="https://www.facebook.com/luisgustavo.gomezbarrios" target="_blank" aria-label="Facebook">
+            <img src="Iconos/Facebook.png" alt="Facebook" width="30" height="30"> 
+            </a>
+            <a href="mailto: lgomezb7@miumg.edu.gt" target="_blank" aria-label="Correo electronico">
+            <img src="Iconos/Mail.png" alt="Correo electronico" width="30" height="30"> 
+            </a>
+            <a href="https://gt.linkedin.com/in/luis-gomez-1536232b3" target="_blank" aria-label="Linkedin">
+            <img src="Iconos/Linkedin.png" alt="Linkedin" width="30" height="30"> 
+            </a>
+        </nav>
+        <div class="info-personal">
+            <p>Luis Gustavo Gómez Barrios</p>
+            <p>Carnet: 5390-25-16444</p>
+            <p>Introduccion a los sistemas de cómputo</p>
+            <p>Seccion "C"</p>
+        </div>
+        <div class="marca">
+            <p>Esta página es una marca registrada de ©Luis Gómez,  2025.</p>
+        </div>
+    </footer>
+
+ <script src="Funcionalidad/app.js"></script>
+</body>
+</html>

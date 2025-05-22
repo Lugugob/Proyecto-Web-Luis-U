@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea Tu Cuenta</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-header">
+            <button class="nav-button" onclick="window.location.href='index.html'">
+                <img src="Iconos/Home.png" alt="Pagina de inicio">
+            </button>
+            <button class="nav-button" onclick="window.location.href='contacto.html'">
+                <img src="Iconos/Message square.png" alt="Contactame">
+            </button>
+            <button class="nav-button" onclick="window.location.href='micuenta.html'">
+                <img src="Iconos/User.png" alt="Mi Cuenta">
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-crear">
+        <h1>Crea tu cuenta</h1>
+        <section class="micuenta-formularios">
+            <form class="micuenta-formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="nombre" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="apellido" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input type="correo" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div class="campo">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña" required>
+                </div>
+            </form>
+        </section>
+        <div class="crear-centrado">
+            <button class="btn-registrarme">Registrarme</button>
+            <p class="linea-o">O</p>
+            <p>Regístrate con tus redes sociales</p>
+        </div>
+       <div class="crear-registros">
+            <a class="crear-fb" href="https://www.facebook.com" target="_blank">Regístrate con Facebook</a>
+            <a class="crear-x" href="https://www.twitter.com" target="_blank">Regístrate con X</a>
+            <a class="crear-lin" href="https://www.linkedin.com" target="_blank">Regístrate con LinkedIn</a>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Contáctame</h2> 
+        <nav class="nav-footer">
+            <a href="https://www.instagram.com/_lggb_/" target="_blank" aria-label="Instagram">
+            <img src="Iconos/Instagram.png" alt="Instagram" width="30" height="30"> 
+            </a>
+            <a href="https://www.facebook.com/luisgustavo.gomezbarrios" target="_blank" aria-label="Facebook">
+            <img src="Iconos/Facebook.png" alt="Facebook" width="30" height="30"> 
+            </a>
+            <a href="mailto: lgomezb7@miumg.edu.gt" target="_blank" aria-label="Correo electronico">
+            <img src="Iconos/Mail.png" alt="Correo electronico" width="30" height="30"> 
+            </a>
+            <a href="https://gt.linkedin.com/in/luis-gomez-1536232b3" target="_blank" aria-label="Linkedin">
+            <img src="Iconos/Linkedin.png" alt="Linkedin" width="30" height="30"> 
+            </a>
+        </nav>
+        <div class="info-personal">
+            <p>Luis Gustavo Gómez Barrios</p>
+            <p>Carnet: 5390-25-16444</p>
+            <p>Introduccion a los sistemas de cómputo</p>
+            <p>Seccion "C"</p>
+        </div>
+        <div class="marca">
+            <p>Esta página es una marca registrada de ©Luis Gómez,  2025.</p>
+        </div>
+    </footer>
+</body>
+</html>
